@@ -20,24 +20,189 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKU-PX-SRr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="127"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in / Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIA-64-aMH">
+                                        <rect key="frame" x="20" y="30" width="179" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="179" id="45U-6J-Zu0"/>
+                                            <constraint firstAttribute="height" constant="21" id="jYR-JR-o5U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code-icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="31Q-qw-v0O">
+                                        <rect key="frame" x="549" y="25" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="kbD-tY-ixu"/>
+                                            <constraint firstAttribute="width" constant="31" id="u9Z-Hm-iJY"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.39332331959032263" blue="0.19161678973348473" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="127" id="9qK-jf-6ZK"/>
+                                    <constraint firstItem="31Q-qw-v0O" firstAttribute="top" secondItem="lKU-PX-SRr" secondAttribute="top" constant="25" id="CIQ-zm-gWe"/>
+                                    <constraint firstItem="sIA-64-aMH" firstAttribute="top" secondItem="lKU-PX-SRr" secondAttribute="top" constant="30" id="D59-Xt-CAy"/>
+                                    <constraint firstItem="sIA-64-aMH" firstAttribute="leading" secondItem="lKU-PX-SRr" secondAttribute="leading" constant="20" id="f8c-2m-26X"/>
+                                    <constraint firstAttribute="trailing" secondItem="31Q-qw-v0O" secondAttribute="trailing" constant="20" id="iRK-Fx-4dK"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTF-Zy-uad" customClass="MaterialView" customModule="Devslopes_Udemy" customModuleProvider="target">
                                 <rect key="frame" x="20" y="67" width="560" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="2nu-Rv-Rr1">
+                                        <rect key="frame" x="12" y="20" width="540" height="88"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="MEX-Fl-OkS">
+                                                <rect key="frame" x="0.0" y="12" width="65" height="65"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eke-6d-xvF" customClass="MaterialButton" customModule="Devslopes_Udemy" customModuleProvider="target">
+                                                <rect key="frame" x="105" y="29" width="435" height="30"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="FACEBOOK LOGIN">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="2nu-Rv-Rr1" firstAttribute="leading" secondItem="rTF-Zy-uad" secondAttribute="leading" constant="10" id="GhC-qg-ce6"/>
+                                    <constraint firstAttribute="bottom" secondItem="2nu-Rv-Rr1" secondAttribute="bottom" constant="20" id="ZKb-yE-OCf"/>
+                                    <constraint firstItem="2nu-Rv-Rr1" firstAttribute="top" secondItem="rTF-Zy-uad" secondAttribute="top" constant="20" id="fVh-dc-NZH"/>
                                     <constraint firstAttribute="height" constant="128" id="jm6-dn-39z"/>
+                                    <constraint firstAttribute="trailing" secondItem="2nu-Rv-Rr1" secondAttribute="trailing" constant="10" id="nyk-8h-30n"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogY-WJ-o3d" customClass="MaterialView" customModule="Devslopes_Udemy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="215" width="560" height="365"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email login / Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsh-NI-op1">
+                                        <rect key="frame" x="17" y="15" width="179" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="EA0-KN-5QT"/>
+                                            <constraint firstAttribute="width" constant="179" id="LRU-3S-sCo"/>
+                                            <constraint firstAttribute="height" constant="21" id="kme-5e-jJ8"/>
+                                            <constraint firstAttribute="width" constant="179" id="t8Q-7b-CLs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="EA0-KN-5QT"/>
+                                                <exclude reference="LRU-3S-sCo"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-et-uK2" customClass="MaterialTextField" customModule="Devslopes_Udemy" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="51" width="523" height="35"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="6Rv-9y-oDz"/>
+                                            <constraint firstAttribute="height" constant="35" id="Bby-ey-07S"/>
+                                            <constraint firstAttribute="height" constant="35" id="eJ7-LB-wQX"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="iAw-KO-MC2"/>
+                                            <constraint firstAttribute="height" constant="30" id="qn0-eN-UqD"/>
+                                        </constraints>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6Rv-9y-oDz"/>
+                                                <exclude reference="eJ7-LB-wQX"/>
+                                                <exclude reference="iAw-KO-MC2"/>
+                                                <exclude reference="qn0-eN-UqD"/>
+                                            </mask>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kz0-JS-kEZ" customClass="MaterialTextField" customModule="Devslopes_Udemy" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="106" width="523" height="35"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="f5P-z6-78B"/>
+                                        </constraints>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P04-zk-uCZ" customClass="MaterialButton" customModule="Devslopes_Udemy" customModuleProvider="target">
+                                        <rect key="frame" x="204" y="195" width="153" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.3933233196" blue="0.19161678970000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cgO-5L-04u"/>
+                                            <constraint firstAttribute="width" constant="153" id="lRd-xz-v29"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Login / Sign up">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="top" secondItem="Nsh-NI-op1" secondAttribute="bottom" constant="13" id="2ik-YE-rPr"/>
+                                    <constraint firstItem="Kz0-JS-kEZ" firstAttribute="trailing" secondItem="5yh-et-uK2" secondAttribute="trailing" id="3o5-71-NC7"/>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="leading" secondItem="Nsh-NI-op1" secondAttribute="leading" id="8Hv-eG-Rxk"/>
+                                    <constraint firstAttribute="trailing" secondItem="5yh-et-uK2" secondAttribute="trailing" constant="20" id="9pF-Fa-5YL"/>
+                                    <constraint firstItem="P04-zk-uCZ" firstAttribute="centerX" secondItem="ogY-WJ-o3d" secondAttribute="centerX" id="AK4-6I-3yW"/>
+                                    <constraint firstItem="Kz0-JS-kEZ" firstAttribute="top" secondItem="5yh-et-uK2" secondAttribute="bottom" constant="20" id="JQq-V7-Jvs"/>
+                                    <constraint firstItem="Kz0-JS-kEZ" firstAttribute="top" secondItem="5yh-et-uK2" secondAttribute="bottom" constant="31" id="MBE-1b-1MM"/>
+                                    <constraint firstAttribute="height" constant="128" id="Mur-2n-VX0"/>
+                                    <constraint firstItem="P04-zk-uCZ" firstAttribute="top" secondItem="Kz0-JS-kEZ" secondAttribute="bottom" constant="54" id="PYa-W4-GtI"/>
+                                    <constraint firstItem="Kz0-JS-kEZ" firstAttribute="leading" secondItem="5yh-et-uK2" secondAttribute="leading" id="QFu-XU-jBE"/>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="leading" secondItem="Nsh-NI-op1" secondAttribute="leading" id="S9a-e8-QsM"/>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="top" secondItem="Nsh-NI-op1" secondAttribute="bottom" constant="28" id="V9p-2X-aFa"/>
+                                    <constraint firstItem="Nsh-NI-op1" firstAttribute="leading" secondItem="ogY-WJ-o3d" secondAttribute="leading" constant="20" id="YQ4-Mf-wkb"/>
+                                    <constraint firstAttribute="trailing" secondItem="5yh-et-uK2" secondAttribute="trailing" constant="20" id="dEU-LL-GnK"/>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="top" secondItem="Nsh-NI-op1" secondAttribute="bottom" constant="28" id="exH-UH-8eU"/>
+                                    <constraint firstItem="Kz0-JS-kEZ" firstAttribute="top" secondItem="5yh-et-uK2" secondAttribute="bottom" constant="20" id="gkH-Uy-f8H"/>
+                                    <constraint firstItem="Nsh-NI-op1" firstAttribute="top" secondItem="ogY-WJ-o3d" secondAttribute="top" constant="20" id="gof-aD-IH6"/>
+                                    <constraint firstItem="Kz0-JS-kEZ" firstAttribute="trailing" secondItem="5yh-et-uK2" secondAttribute="trailing" id="iaR-7l-o36"/>
+                                    <constraint firstAttribute="trailing" secondItem="5yh-et-uK2" secondAttribute="trailing" constant="20" id="lF1-Vy-UwO"/>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="leading" secondItem="Nsh-NI-op1" secondAttribute="leading" id="lVS-r9-5Uo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kz0-JS-kEZ" secondAttribute="trailing" constant="20" id="mHK-Jt-Uad"/>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="top" secondItem="Nsh-NI-op1" secondAttribute="bottom" constant="20" id="qwc-gm-IEu"/>
+                                    <constraint firstItem="Kz0-JS-kEZ" firstAttribute="leading" secondItem="5yh-et-uK2" secondAttribute="leading" id="r7Q-9M-lGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5yh-et-uK2" secondAttribute="trailing" constant="20" id="uRO-Sz-uol"/>
+                                    <constraint firstItem="5yh-et-uK2" firstAttribute="top" secondItem="Nsh-NI-op1" secondAttribute="bottom" constant="28" id="xQ2-hN-C7z"/>
+                                    <constraint firstAttribute="trailing" secondItem="5yh-et-uK2" secondAttribute="trailing" constant="20" id="zGm-da-L3b"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mur-2n-VX0"/>
+                                        <exclude reference="8Hv-eG-Rxk"/>
+                                        <exclude reference="V9p-2X-aFa"/>
+                                        <exclude reference="dEU-LL-GnK"/>
+                                        <exclude reference="exH-UH-8eU"/>
+                                        <exclude reference="lF1-Vy-UwO"/>
+                                        <exclude reference="lVS-r9-5Uo"/>
+                                        <exclude reference="qwc-gm-IEu"/>
+                                        <exclude reference="uRO-Sz-uol"/>
+                                        <exclude reference="xQ2-hN-C7z"/>
+                                        <exclude reference="zGm-da-L3b"/>
+                                        <exclude reference="3o5-71-NC7"/>
+                                        <exclude reference="MBE-1b-1MM"/>
+                                        <exclude reference="QFu-XU-jBE"/>
+                                        <exclude reference="gkH-Uy-f8H"/>
+                                        <exclude reference="mHK-Jt-Uad"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ogY-WJ-o3d" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2Sn-dQ-zsV"/>
                             <constraint firstAttribute="trailing" secondItem="lKU-PX-SRr" secondAttribute="trailing" id="531-wX-QQX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ogY-WJ-o3d" secondAttribute="bottom" constant="20" id="6TB-X0-YDr"/>
+                            <constraint firstItem="ogY-WJ-o3d" firstAttribute="top" secondItem="rTF-Zy-uad" secondAttribute="bottom" constant="20" id="9fr-qp-Vj1"/>
                             <constraint firstItem="lKU-PX-SRr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nen-Hi-Lid"/>
                             <constraint firstItem="lKU-PX-SRr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UaL-ho-I9K"/>
+                            <constraint firstItem="ogY-WJ-o3d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Yf4-QN-N7v"/>
                             <constraint firstItem="rTF-Zy-uad" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="fgw-JA-cxO"/>
                             <constraint firstItem="rTF-Zy-uad" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gQt-Is-Ijv"/>
                             <constraint firstItem="rTF-Zy-uad" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yUy-yc-Lw4"/>
@@ -49,4 +214,8 @@
             <point key="canvasLocation" x="380" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="code-icon-logo" width="318" height="281"/>
+        <image name="fb-icon" width="65" height="65"/>
+    </resources>
 </document>

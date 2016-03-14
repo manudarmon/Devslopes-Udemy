@@ -14,6 +14,8 @@
 		AF3519381C933AB500779D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3519361C933AB500779D2D /* LaunchScreen.storyboard */; };
 		AF3519441C93416300779D2D /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3519431C93416300779D2D /* MaterialView.swift */; };
 		AF3519471C9344DB00779D2D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3519461C9344DB00779D2D /* Constants.swift */; };
+		AF3519491C971D7F00779D2D /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3519481C971D7F00779D2D /* MaterialButton.swift */; };
+		AF35194B1C97231E00779D2D /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35194A1C97231E00779D2D /* MaterialTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AF3519391C933AB500779D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3519431C93416300779D2D /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		AF3519461C9344DB00779D2D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF3519481C971D7F00779D2D /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		AF35194A1C97231E00779D2D /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				AF3519431C93416300779D2D /* MaterialView.swift */,
+				AF3519481C971D7F00779D2D /* MaterialButton.swift */,
+				AF35194A1C97231E00779D2D /* MaterialTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -181,10 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF35194B1C97231E00779D2D /* MaterialTextField.swift in Sources */,
 				AF3519441C93416300779D2D /* MaterialView.swift in Sources */,
 				AF3519301C933AB400779D2D /* ViewController.swift in Sources */,
 				AF35192E1C933AB400779D2D /* AppDelegate.swift in Sources */,
 				AF3519471C9344DB00779D2D /* Constants.swift in Sources */,
+				AF3519491C971D7F00779D2D /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
