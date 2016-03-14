@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C119FB3CB8AC31F56274424 /* Pods_Devslopes_Udemy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39091A66E2A6EFDCD36E245 /* Pods_Devslopes_Udemy.framework */; };
 		AF35192E1C933AB400779D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35192D1C933AB400779D2D /* AppDelegate.swift */; };
 		AF3519301C933AB400779D2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35192F1C933AB400779D2D /* ViewController.swift */; };
 		AF3519331C933AB400779D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3519311C933AB400779D2D /* Main.storyboard */; };
@@ -16,9 +17,13 @@
 		AF3519471C9344DB00779D2D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3519461C9344DB00779D2D /* Constants.swift */; };
 		AF3519491C971D7F00779D2D /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3519481C971D7F00779D2D /* MaterialButton.swift */; };
 		AF35194B1C97231E00779D2D /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35194A1C97231E00779D2D /* MaterialTextField.swift */; };
+		AF3519501C97316200779D2D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35194D1C97316200779D2D /* Bolts.framework */; };
+		AF3519511C97316200779D2D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35194E1C97316200779D2D /* FBSDKCoreKit.framework */; };
+		AF3519521C97316200779D2D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35194F1C97316200779D2D /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26D9FBAD2DC2604983928F22 /* Pods-Devslopes-Udemy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devslopes-Udemy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Devslopes-Udemy/Pods-Devslopes-Udemy.release.xcconfig"; sourceTree = "<group>"; };
 		AF35192A1C933AB400779D2D /* Devslopes-Udemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Devslopes-Udemy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35192D1C933AB400779D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF35192F1C933AB400779D2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +35,11 @@
 		AF3519461C9344DB00779D2D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AF3519481C971D7F00779D2D /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		AF35194A1C97231E00779D2D /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		AF35194D1C97316200779D2D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AF35194E1C97316200779D2D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		AF35194F1C97316200779D2D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C39091A66E2A6EFDCD36E245 /* Pods_Devslopes_Udemy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Devslopes_Udemy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10F5AB765DFD15AB5BB82B5 /* Pods-Devslopes-Udemy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devslopes-Udemy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Devslopes-Udemy/Pods-Devslopes-Udemy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3519501C97316200779D2D /* Bolts.framework in Frameworks */,
+				AF3519511C97316200779D2D /* FBSDKCoreKit.framework in Frameworks */,
+				AF3519521C97316200779D2D /* FBSDKLoginKit.framework in Frameworks */,
+				0C119FB3CB8AC31F56274424 /* Pods_Devslopes_Udemy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +62,8 @@
 			children = (
 				AF35192C1C933AB400779D2D /* Devslopes-Udemy */,
 				AF35192B1C933AB400779D2D /* Products */,
+				E1F981FCB7734F59E00750F3 /* Pods */,
+				BBB9E084C85675E6144C75CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +78,7 @@
 		AF35192C1C933AB400779D2D /* Devslopes-Udemy */ = {
 			isa = PBXGroup;
 			children = (
+				AF35194C1C97310D00779D2D /* Frameworks */,
 				AF3519451C9344CF00779D2D /* Util */,
 				AF3519421C933B0A00779D2D /* Ressource */,
 				AF3519411C933B0500779D2D /* Model */,
@@ -116,6 +133,33 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		AF35194C1C97310D00779D2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF35194D1C97316200779D2D /* Bolts.framework */,
+				AF35194E1C97316200779D2D /* FBSDKCoreKit.framework */,
+				AF35194F1C97316200779D2D /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBB9E084C85675E6144C75CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39091A66E2A6EFDCD36E245 /* Pods_Devslopes_Udemy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1F981FCB7734F59E00750F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E10F5AB765DFD15AB5BB82B5 /* Pods-Devslopes-Udemy.debug.xcconfig */,
+				26D9FBAD2DC2604983928F22 /* Pods-Devslopes-Udemy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF35193C1C933AB500779D2D /* Build configuration list for PBXNativeTarget "Devslopes-Udemy" */;
 			buildPhases = (
+				14C4868EC10E6CD1CB3C5C69 /* Check Pods Manifest.lock */,
 				AF3519261C933AB400779D2D /* Sources */,
 				AF3519271C933AB400779D2D /* Frameworks */,
 				AF3519281C933AB400779D2D /* Resources */,
+				409E6EA3B5AF07D0D3CE8BB2 /* Embed Pods Frameworks */,
+				8E5006F014C35DBD9CD1EA5E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +228,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14C4868EC10E6CD1CB3C5C69 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		409E6EA3B5AF07D0D3CE8BB2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Devslopes-Udemy/Pods-Devslopes-Udemy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E5006F014C35DBD9CD1EA5E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Devslopes-Udemy/Pods-Devslopes-Udemy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF3519261C933AB400779D2D /* Sources */ = {
@@ -301,8 +396,14 @@
 		};
 		AF35193D1C933AB500779D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E10F5AB765DFD15AB5BB82B5 /* Pods-Devslopes-Udemy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Devslopes-Udemy",
+				);
 				INFOPLIST_FILE = "Devslopes-Udemy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emmanueldarmon.Devslopes-Udemy";
@@ -312,8 +413,14 @@
 		};
 		AF35193E1C933AB500779D2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D9FBAD2DC2604983928F22 /* Pods-Devslopes-Udemy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Devslopes-Udemy",
+				);
 				INFOPLIST_FILE = "Devslopes-Udemy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emmanueldarmon.Devslopes-Udemy";
@@ -340,6 +447,7 @@
 				AF35193E1C933AB500779D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
