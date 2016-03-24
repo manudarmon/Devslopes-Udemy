@@ -41,7 +41,7 @@ class ViewController: UIViewController {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
                 print( "Successfully logged in with facebook. \( accessToken )" )
                 
-                DataService.ds.REF_BASE.authWithOAuthProvider("Facebook", token: accessToken, withCompletionBlock: { error, authData in
+                DataService.ds.REF_BASE.authWithOAuthProvider("facebook", token: accessToken, withCompletionBlock: { error, authData in
                     
                     if error != nil {
                         print("Login failed. \(error)")
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     
     @IBAction func attemptLogin(sender: UIButton!) {
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
-            DataService.ds.REF_BASE.authUser(email, password: psw, withCompletionBlock: {
+            DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: {
                 error, authData in
                 
                 if error != nil {
