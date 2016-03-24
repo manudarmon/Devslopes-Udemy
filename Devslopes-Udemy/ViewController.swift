@@ -62,7 +62,16 @@ class ViewController: UIViewController {
     
     @IBAction func attemptLogin(sender: UIButton!) {
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
-            
+            DataService.ds.REF_BASE.authUser(email, password: psw, withCompletionBlock: {
+                error, authData in
+                
+                if error != nil {
+                    
+                    print(error.code)
+                    
+                }
+                    
+            })
         } else {
             showErrorAllert("Email and psw required", msg: "You must enter an email and a psw")
         }
