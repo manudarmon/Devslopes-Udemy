@@ -61,7 +61,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func attemptLogin(sender: UIButton!) {
+        
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
+            
             DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: {
                 error, authData in
                 
@@ -85,4 +87,19 @@ class ViewController: UIViewController {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
