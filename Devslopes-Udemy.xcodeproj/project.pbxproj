@@ -21,6 +21,8 @@
 		AF3519511C97316200779D2D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35194E1C97316200779D2D /* FBSDKCoreKit.framework */; };
 		AF3519521C97316200779D2D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35194F1C97316200779D2D /* FBSDKLoginKit.framework */; };
 		AF9AED6C1C9855D100310BF2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AED6B1C9855D100310BF2 /* DataService.swift */; };
+		AFDD83AC1CA586AD00F7F6F0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD83AB1CA586AD00F7F6F0 /* FeedVC.swift */; };
+		AFDD83AE1CA5892100F7F6F0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD83AD1CA5892100F7F6F0 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		AF35194E1C97316200779D2D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		AF35194F1C97316200779D2D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		AF9AED6B1C9855D100310BF2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AFDD83AB1CA586AD00F7F6F0 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		AFDD83AD1CA5892100F7F6F0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		C39091A66E2A6EFDCD36E245 /* Pods_Devslopes_Udemy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Devslopes_Udemy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10F5AB765DFD15AB5BB82B5 /* Pods-Devslopes-Udemy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devslopes-Udemy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Devslopes-Udemy/Pods-Devslopes-Udemy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +92,6 @@
 				AF3519401C933AFF00779D2D /* View */,
 				AF35193F1C933AEE00779D2D /* Controller */,
 				AF35192D1C933AB400779D2D /* AppDelegate.swift */,
-				AF35192F1C933AB400779D2D /* ViewController.swift */,
 				AF3519311C933AB400779D2D /* Main.storyboard */,
 				AF3519341C933AB500779D2D /* Assets.xcassets */,
 				AF3519361C933AB500779D2D /* LaunchScreen.storyboard */,
@@ -110,6 +113,7 @@
 				AF3519431C93416300779D2D /* MaterialView.swift */,
 				AF3519481C971D7F00779D2D /* MaterialButton.swift */,
 				AF35194A1C97231E00779D2D /* MaterialTextField.swift */,
+				AFDD83AD1CA5892100F7F6F0 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -124,6 +128,8 @@
 		AF3519421C933B0A00779D2D /* Ressource */ = {
 			isa = PBXGroup;
 			children = (
+				AF35192F1C933AB400779D2D /* ViewController.swift */,
+				AFDD83AB1CA586AD00F7F6F0 /* FeedVC.swift */,
 			);
 			name = Ressource;
 			sourceTree = "<group>";
@@ -297,6 +303,8 @@
 				AF9AED6C1C9855D100310BF2 /* DataService.swift in Sources */,
 				AF3519441C93416300779D2D /* MaterialView.swift in Sources */,
 				AF3519301C933AB400779D2D /* ViewController.swift in Sources */,
+				AFDD83AC1CA586AD00F7F6F0 /* FeedVC.swift in Sources */,
+				AFDD83AE1CA5892100F7F6F0 /* PostCell.swift in Sources */,
 				AF35192E1C933AB400779D2D /* AppDelegate.swift in Sources */,
 				AF3519471C9344DB00779D2D /* Constants.swift in Sources */,
 				AF3519491C971D7F00779D2D /* MaterialButton.swift in Sources */,
