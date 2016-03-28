@@ -23,6 +23,7 @@
 		AF9AED6C1C9855D100310BF2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AED6B1C9855D100310BF2 /* DataService.swift */; };
 		AFDD83AC1CA586AD00F7F6F0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD83AB1CA586AD00F7F6F0 /* FeedVC.swift */; };
 		AFDD83AE1CA5892100F7F6F0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD83AD1CA5892100F7F6F0 /* PostCell.swift */; };
+		AFDD83B01CA9CA5A00F7F6F0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD83AF1CA9CA5A00F7F6F0 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AF9AED6B1C9855D100310BF2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AFDD83AB1CA586AD00F7F6F0 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		AFDD83AD1CA5892100F7F6F0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		AFDD83AF1CA9CA5A00F7F6F0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C39091A66E2A6EFDCD36E245 /* Pods_Devslopes_Udemy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Devslopes_Udemy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10F5AB765DFD15AB5BB82B5 /* Pods-Devslopes-Udemy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devslopes-Udemy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Devslopes-Udemy/Pods-Devslopes-Udemy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 		AF3519411C933B0500779D2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AFDD83AF1CA9CA5A00F7F6F0 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				AF35192E1C933AB400779D2D /* AppDelegate.swift in Sources */,
 				AF3519471C9344DB00779D2D /* Constants.swift in Sources */,
 				AF3519491C971D7F00779D2D /* MaterialButton.swift in Sources */,
+				AFDD83B01CA9CA5A00F7F6F0 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
