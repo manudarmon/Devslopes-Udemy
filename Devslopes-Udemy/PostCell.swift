@@ -12,6 +12,11 @@ class PostCell: UITableViewCell {
     
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var showcaseImg: UIImageView!
+    @IBOutlet weak var descriptionText: UITextView!
+    @IBOutlet weak var likesLbl: UILabel!
+    
+    var post: Post!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +31,13 @@ class PostCell: UITableViewCell {
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func configureCell(post: Post) {
+        self.post = post
+        
+        self.descriptionText.text = post.postDescription
+        self.likesLbl.text = "\(post.likes)"
     }
 
 }
