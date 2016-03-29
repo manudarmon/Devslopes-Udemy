@@ -23,7 +23,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
-            self.tableView.reloadData()
             
             self.posts = []
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot]{
@@ -40,10 +39,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 
             }
             
+            self.tableView.reloadData()
+            
         })
         
     }
-    
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
