@@ -89,10 +89,10 @@
 				AF9AED6A1C98559300310BF2 /* Services */,
 				AF35194C1C97310D00779D2D /* Frameworks */,
 				AF3519451C9344CF00779D2D /* Util */,
-				AF3519421C933B0A00779D2D /* Ressource */,
 				AF3519411C933B0500779D2D /* Model */,
 				AF3519401C933AFF00779D2D /* View */,
 				AF35193F1C933AEE00779D2D /* Controller */,
+				AF3519421C933B0A00779D2D /* Ressource */,
 				AF35192D1C933AB400779D2D /* AppDelegate.swift */,
 				AF3519311C933AB400779D2D /* Main.storyboard */,
 				AF3519341C933AB500779D2D /* Assets.xcassets */,
@@ -105,6 +105,8 @@
 		AF35193F1C933AEE00779D2D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AF35192F1C933AB400779D2D /* ViewController.swift */,
+				AFDD83AB1CA586AD00F7F6F0 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -131,8 +133,6 @@
 		AF3519421C933B0A00779D2D /* Ressource */ = {
 			isa = PBXGroup;
 			children = (
-				AF35192F1C933AB400779D2D /* ViewController.swift */,
-				AFDD83AB1CA586AD00F7F6F0 /* FeedVC.swift */,
 			);
 			name = Ressource;
 			sourceTree = "<group>";
