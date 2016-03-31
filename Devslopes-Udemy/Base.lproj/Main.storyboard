@@ -248,8 +248,9 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="Spo-Ai-Sns">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="Spo-Ai-Sns">
                                                 <rect key="frame" x="447" y="0.0" width="37" height="38"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="1Wx-SK-L1i"/>
                                                     <constraint firstAttribute="width" constant="37" id="fje-rX-vJG"/>
@@ -259,6 +260,9 @@
                                                         <exclude reference="1Wx-SK-L1i"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ZH7-p3-WjT" appends="YES" id="W6t-bp-Cgb"/>
+                                                </connections>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnv-Pa-7pU" customClass="MaterialButton" customModule="Devslopes_Udemy" customModuleProvider="target">
                                                 <rect key="frame" x="494" y="0.0" width="50" height="38"/>
@@ -270,6 +274,9 @@
                                                 <state key="normal" title="POST">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="makePost:" destination="gND-6T-VFn" eventType="touchUpInside" id="hcV-hf-QMx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -396,6 +403,7 @@
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="descriptionText" destination="0hU-2w-4EC" id="0BE-Zx-jFE"/>
+                                            <outlet property="likeImage" destination="P6g-rg-eZE" id="IJV-18-50r"/>
                                             <outlet property="likesLbl" destination="u36-vJ-UuF" id="stp-Dh-llN"/>
                                             <outlet property="profileImg" destination="5nz-fy-Qqq" id="8IF-Wb-z78"/>
                                             <outlet property="showcaseImg" destination="npJ-oe-eGq" id="Gxg-p9-CAV"/>
@@ -432,10 +440,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="SRJ-pP-zzm"/>
                     <connections>
+                        <outlet property="imageSelectorImage" destination="Spo-Ai-Sns" id="JRC-r2-BeG"/>
+                        <outlet property="postField" destination="DkX-lh-aZs" id="73W-ep-CNb"/>
                         <outlet property="tableView" destination="O77-Ti-hb0" id="beX-Va-sz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qph-jp-HRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZH7-p3-WjT">
+                    <connections>
+                        <action selector="selectImage:" destination="gND-6T-VFn" id="XcO-4s-mIp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1839" y="337"/>
         </scene>
